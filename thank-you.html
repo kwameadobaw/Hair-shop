@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Glamour Wigs</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <script>
+        // Apply theme immediately to prevent flash
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.documentElement.classList.add('dark-mode');
+            document.body.classList.add('dark-mode');
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="light-mode">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Glamour Wigs</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn">
+                    <i class="fas fa-moon"></i>
+                    <span>Dark Mode</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="thank-you">
+            <div class="container">
+                <i class="fas fa-check-circle" style="font-size: 5rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                <h2>Thank You for Your Order!</h2>
+                <p>Your order has been successfully placed. We've sent a confirmation email with all the details to your email address.</p>
+                <p>Our team will process your order shortly and contact you regarding delivery.</p>
+                <a href="index.html" class="back-to-home">Continue Shopping</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- <footer>
+        <div class="container">
+            <p>&copy; 2023 Glamour Wigs. All rights reserved.</p>
+        </div>
+    </footer> -->
+
+    <script src="js/script.js"></script>
+</body>
+</html>

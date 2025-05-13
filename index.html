@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glamour Wigs - Premium Wig Collection</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <script>
+      // Apply theme immediately to prevent flash
+      if (localStorage.getItem('darkMode') === 'true') {
+        document.documentElement.classList.add('dark-mode');
+        document.body.classList.add('dark-mode');
+      }
+    </script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="light-mode">
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>Glamour Wigs</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li>
+              <a href="cart.html">Cart <span id="cart-count">0</span></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="theme-toggle">
+          <button id="theme-toggle-btn">
+            <i class="fas fa-moon"></i>
+            <span>Dark Mode</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h2>Premium Quality Wigs</h2>
+          <p>
+            Discover our exclusive collection of high-quality wigs designed for
+            comfort and style
+          </p>
+        </div>
+      </section>
+
+      <section class="products">
+        <div class="container">
+          <h2>Our Collection</h2>
+          <div class="product-grid" id="product-grid">
+            <!-- Products will be loaded here via JavaScript -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- <footer>
+      <div class="container">
+        <p>&copy; 2023 Glamour Wigs. All rights reserved.</p>
+      </div>
+    </footer> -->
+
+    <div class="notification" id="notification">
+      <p>Item added to cart!</p>
+    </div>
+
+    <script src="js/products.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

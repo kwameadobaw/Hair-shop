@@ -1,0 +1,24 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .wig-stroke { stroke: #333333; }
+    .wig-fill { fill: #333333; }
+    @media (prefers-color-scheme: dark) {
+      .wig-stroke { stroke: #f1f1f1; }
+      .wig-fill { fill: #f1f1f1; }
+    }
+  </style>
+  <g class="wig-stroke" fill="none" stroke-width="2" stroke-linecap="round">
+    <!-- Head shape -->
+    <path d="M16 26c5.5 0 10-4.5 10-10s-4.5-10-10-10-10 4.5-10 10 4.5 10 10 10z" />
+    <!-- Flowing hair strands -->
+    <path d="M12 8c0 0 -2 3 -2 6s2 6 2 6" />
+    <path d="M16 7c0 0 -1 3 -1 7s1 7 1 7" />
+    <path d="M20 8c0 0 2 3 2 6s-2 6-2 6" />
+    <!-- Top waves -->
+    <path d="M11 9c2-2 8-2 10 0" />
+    <path d="M13 7c2-1 4-1 6 0" />
+  </g>
+  <!-- Decorative dots -->
+  <circle class="wig-fill" cx="14" cy="14" r="1" />
+  <circle class="wig-fill" cx="18" cy="14" r="1" />
+</svg>
